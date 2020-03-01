@@ -1,5 +1,7 @@
 import { Sortable } from '@shopify/draggable';
 
+import playerHeadshot from './assets/images/headshot.png'
+
 const players = [
     
     {
@@ -164,7 +166,7 @@ players.forEach(player => {
     playerDiv.setAttribute('class', 'player');
     const pic = document.createElement('img');
     pic.setAttribute('class', 'headshot');
-    pic.src = 'headshot.png';
+    pic.src = playerHeadshot;
     playerDiv.appendChild(pic);
     const name = document.createElement('p');
     name.innerHTML = player.name;
