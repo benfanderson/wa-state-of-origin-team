@@ -1,0 +1,26 @@
+{
+  "name": "wa-state-of-origin-team",
+  "version": "1.0.0",
+  "description": "Using Javascript drag and drop to help Australian Football League fans pick their own WA state of Origin team.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benfanderson/wa-state-of-origin-team.git"
+  },
+  "author": "Ben Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benfanderson/wa-state-of-origin-team/issues"
+  },
+  "homepage": "https://github.com/benfanderson/wa-state-of-origin-team#readme",
+  "devDependencies": {
+    "@shopify/draggable": "^1.0.0-beta.8",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
