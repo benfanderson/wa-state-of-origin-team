@@ -14,6 +14,8 @@ This app uses the following open source packages:
 
   * [Draggable](https://shopify.github.io/draggable/)
 
+  * [Babel](https://babeljs.io/)
+
   
 ### How To Use
 

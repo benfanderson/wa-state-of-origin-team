@@ -18,9 +18,17 @@
   },
   "homepage": "https://github.com/benfanderson/wa-state-of-origin-team#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
     "@shopify/draggable": "^1.0.0-beta.8",
+    "babel-loader": "^8.0.6",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
-  }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
 }
