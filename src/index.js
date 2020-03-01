@@ -1,6 +1,8 @@
 import { Sortable } from '@shopify/draggable';
 
-import playerHeadshot from './assets/images/headshot.png'
+import playerHeadshot from './assets/images/headshot.png';
+
+import './style.scss';
 
 const players = [
     

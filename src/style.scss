@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src:
+      url('./assets/fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
+      url('./assets/fonts/open-sans-v17-latin-regular.woff') format('woff');
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +16,7 @@
     width: 80%;
     margin: auto;
     justify-content: space-evenly;
+    font-family: 'Open Sans';
 }
 
 #team{
