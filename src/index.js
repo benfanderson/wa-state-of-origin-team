@@ -1,10 +1,8 @@
-import { Sortable } from '@shopify/draggable';
-
 import playerHeadshot from './assets/images/headshot.png';
-
 import './style.scss';
+import Sortable from '@shopify/draggable';
 
-const players = [
+var players = [
     
     {
         name: 'Nic Naitanui',
