@@ -99,7 +99,60 @@ const players = [
 
 ];
 
-const mainTeam = document.getElementById('main-team');
+function makeElement(elementName, attributeType, attributeName, parentContainer) {
+  const att = document.createAttribute(attributeType);
+  att.value = attributeName;
+  elementName.setAttributeNode(att);
+  parentContainer.appendChild(elementName);
+}
+
+
+const container = document.createElement('div');
+container.setAttribute('id', 'container');
+document.body.appendChild(container);
+
+const headline = document.createElement('h1');
+headline.innerHTML = 'Choose your WA State of Origin team';
+container.appendChild(headline);
+
+const team = document.createElement('div');
+makeElement(team, 'id', 'team', container);
+
+const back = document.createElement('h3');
+back.innerHTML = 'BACK';
+team.appendChild(back);
+
+const mainTeam = document.createElement('div');
+makeElement(mainTeam, 'id', 'main-team', team);
+
+const forward = document.createElement('h3');
+forward.innerHTML = 'FORWARD';
+team.appendChild(forward);
+
+const followersHead = document.createElement('h3');
+followersHead.innerHTML = 'Followers';
+team.appendChild(followersHead);
+
+const followers = document.createElement('div');
+makeElement(followers, 'id', 'followers', team);
+
+const interchangeHead = document.createElement('h3');
+interchangeHead.innerHTML = 'Interchange';
+team.appendChild(interchangeHead);
+
+const interchange = document.createElement('div');
+makeElement(interchange, 'id', 'interchange', team);
+
+const squad = document.createElement('div');
+makeElement(squad, 'id', 'squad', container);
+
+const playersHead = document.createElement('h2');
+playersHead.innerHTML = 'Players';
+squad.appendChild(playersHead);
+
+const playerContainer = document.createElement('div');
+makeElement(playerContainer, 'id', 'playerContainer', squad);
+makeElement(playerContainer, 'class', 'container', squad);
 
 for (let i = 0; i < 15; i++) {
   const position = document.createElement('div');
@@ -108,8 +161,6 @@ for (let i = 0; i < 15; i++) {
   mainTeam.appendChild(position);
 }
 
-const followers = document.getElementById('followers');
-
 for (let i = 0; i < 3; i++) {
   const position = document.createElement('div');
   position.setAttribute('class', 'pos container');
@@ -117,16 +168,12 @@ for (let i = 0; i < 3; i++) {
   followers.appendChild(position);
 }
 
-const interchange = document.getElementById('interchange');
-
 for (let i = 0; i < 3; i++) {
   const position = document.createElement('div');
   position.setAttribute('class', 'pos container');
   position.setAttribute('data-capacity', '');
   interchange.appendChild(position);
 }
-
-const playerContainer = document.getElementById('playerContainer');
 
 players.forEach((player) => {
   const playerDiv = document.createElement('div');

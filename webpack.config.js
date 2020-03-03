@@ -1,3 +1,6 @@
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: './src/index.js',
   module: {
@@ -25,6 +28,15 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin(
+      {
+        title: 'Choose your WA State of Origin team',
+        template: './src/index.html',
+      },
+    ),
+  ],
   resolve: {
     extensions: ['*', '.js'],
   },
