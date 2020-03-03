@@ -99,60 +99,57 @@ const players = [
 
 ];
 
-function makeElement(elementName, attributeType, attributeName, parentContainer) {
+function elementAttributeAppend(elementName, attributeType, attributeName, parentContainer) {
   const att = document.createAttribute(attributeType);
   att.value = attributeName;
   elementName.setAttributeNode(att);
   parentContainer.appendChild(elementName);
 }
 
+function elementInner(element, inner, parentContainer) {
+  element.innerHTML = inner;
+  parentContainer.appendChild(element);
+}
 
 const container = document.createElement('div');
-container.setAttribute('id', 'container');
-document.body.appendChild(container);
+elementAttributeAppend(container, 'id', 'container', document.body);
 
 const headline = document.createElement('h1');
-headline.innerHTML = 'Choose your WA State of Origin team';
-container.appendChild(headline);
+elementInner(headline, 'Choose your WA State of Origin team', container);
 
 const team = document.createElement('div');
-makeElement(team, 'id', 'team', container);
+elementAttributeAppend(team, 'id', 'team', container);
 
 const back = document.createElement('h3');
-back.innerHTML = 'BACK';
-team.appendChild(back);
+elementInner(back, 'BACK', team);
 
 const mainTeam = document.createElement('div');
-makeElement(mainTeam, 'id', 'main-team', team);
+elementAttributeAppend(mainTeam, 'id', 'main-team', team);
 
 const forward = document.createElement('h3');
-forward.innerHTML = 'FORWARD';
-team.appendChild(forward);
+elementInner(forward, 'FORWARD', team);
 
 const followersHead = document.createElement('h3');
-followersHead.innerHTML = 'Followers';
-team.appendChild(followersHead);
+elementInner(followersHead, 'Followers', team);
 
 const followers = document.createElement('div');
-makeElement(followers, 'id', 'followers', team);
+elementAttributeAppend(followers, 'id', 'followers', team);
 
 const interchangeHead = document.createElement('h3');
-interchangeHead.innerHTML = 'Interchange';
-team.appendChild(interchangeHead);
+elementInner(interchangeHead, 'Interchange', team);
 
 const interchange = document.createElement('div');
-makeElement(interchange, 'id', 'interchange', team);
+elementAttributeAppend(interchange, 'id', 'interchange', team);
 
 const squad = document.createElement('div');
-makeElement(squad, 'id', 'squad', container);
+elementAttributeAppend(squad, 'id', 'squad', container);
 
 const playersHead = document.createElement('h2');
-playersHead.innerHTML = 'Players';
-squad.appendChild(playersHead);
+elementInner(playersHead, 'Players', squad);
 
 const playerContainer = document.createElement('div');
-makeElement(playerContainer, 'id', 'playerContainer', squad);
-makeElement(playerContainer, 'class', 'container', squad);
+elementAttributeAppend(playerContainer, 'id', 'playerContainer', squad);
+elementAttributeAppend(playerContainer, 'class', 'container', squad);
 
 for (let i = 0; i < 15; i++) {
   const position = document.createElement('div');
