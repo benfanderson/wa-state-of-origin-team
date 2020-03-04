@@ -3,7 +3,6 @@ import '../style.scss';
 import { dragDrop, createDropZones } from './dragDropFuncs';
 import { elementAttributeAppend, elementInner } from './createElementFuncs';
 
-
 const players = [
 
   {
