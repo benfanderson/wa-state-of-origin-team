@@ -1,6 +1,7 @@
 import playerHeadshot from './assets/images/headshot.png';
 import './style.scss';
 import { dragDrop, createDropZones } from './dragDropFuncs';
+import { elementAttributeAppend, elementInner } from './createElementFuncs';
 
 
 const players = [
@@ -98,18 +99,6 @@ const players = [
 
 
 ];
-
-function elementAttributeAppend(elementName, attributeType, attributeName, parentContainer) {
-  const att = document.createAttribute(attributeType);
-  att.value = attributeName;
-  elementName.setAttributeNode(att);
-  parentContainer.appendChild(elementName);
-}
-
-function elementInner(element, inner, parentContainer) {
-  element.innerHTML = inner;
-  parentContainer.appendChild(element);
-}
 
 const container = document.createElement('div');
 elementAttributeAppend(container, 'id', 'container', document.body);
