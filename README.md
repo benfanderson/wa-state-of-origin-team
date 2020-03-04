@@ -28,18 +28,22 @@ To clone and run this application, you'll need [Git](https://git-scm.com/) and [
 
 https://github.com/benfanderson/wa-state-of-origin-team.git
 
- **Go into the repository**
+**Go into the repository**
 
 ```cd wa-state-of-origin-team```
 
- **Install dependencies**
+**Install dependencies**
 
 
 ```npm install```
 
- **To run app in development mode**
+**To run app in development mode**
 
 ```npm run start```
+
+**To run app in production mode**
+
+```npm run build```
 
 ## License
 
