@@ -1,6 +1,6 @@
 import { Sortable } from '@shopify/draggable';
 
-export default function dragDrop() {
+export function dragDrop() {
   const containers = document.querySelectorAll('.container');
 
   const sortable = new Sortable(containers, {
@@ -31,4 +31,13 @@ export default function dragDrop() {
       evt.cancel();
     }
   });
+}
+
+export function createDropZones(length, parentContainer) {
+  for (let i = 0; i < length; i++) {
+    const position = document.createElement('div');
+    position.setAttribute('class', 'pos container');
+    position.setAttribute('data-capacity', '');
+    parentContainer.appendChild(position);
+  }
 }

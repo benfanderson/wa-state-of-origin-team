@@ -1,6 +1,6 @@
 import playerHeadshot from './assets/images/headshot.png';
 import './style.scss';
-import dragDrop from './dragDropFunc';
+import { dragDrop, createDropZones } from './dragDropFuncs';
 
 
 const players = [
@@ -151,27 +151,6 @@ const playerContainer = document.createElement('div');
 elementAttributeAppend(playerContainer, 'id', 'playerContainer', squad);
 elementAttributeAppend(playerContainer, 'class', 'container', squad);
 
-for (let i = 0; i < 15; i++) {
-  const position = document.createElement('div');
-  position.setAttribute('class', 'pos container');
-  position.setAttribute('data-capacity', '');
-  mainTeam.appendChild(position);
-}
-
-for (let i = 0; i < 3; i++) {
-  const position = document.createElement('div');
-  position.setAttribute('class', 'pos container');
-  position.setAttribute('data-capacity', '');
-  followers.appendChild(position);
-}
-
-for (let i = 0; i < 3; i++) {
-  const position = document.createElement('div');
-  position.setAttribute('class', 'pos container');
-  position.setAttribute('data-capacity', '');
-  interchange.appendChild(position);
-}
-
 players.forEach((player) => {
   const playerDiv = document.createElement('div');
   playerContainer.appendChild(playerDiv);
@@ -184,5 +163,11 @@ players.forEach((player) => {
   name.innerHTML = player.name;
   playerDiv.appendChild(name);
 });
+
+createDropZones(15, mainTeam);
+
+createDropZones(3, followers);
+
+createDropZones(3, interchange);
 
 dragDrop();
