@@ -1,5 +1,5 @@
-import playerHeadshot from './assets/images/headshot.png';
-import './style.scss';
+import playerHeadshot from '../assets/images/headshot.png';
+import '../style.scss';
 import { dragDrop, createDropZones } from './dragDropFuncs';
 import { elementAttributeAppend, elementInner } from './createElementFuncs';
 
