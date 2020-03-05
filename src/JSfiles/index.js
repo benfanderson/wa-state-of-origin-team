@@ -108,26 +108,32 @@ elementInner(headline, 'Choose your WA State of Origin team', container);
 const team = document.createElement('div');
 elementAttributeAppend(team, 'id', 'team', container);
 
+const teamDivOne = document.createElement('div');
+elementAttributeAppend(teamDivOne, 'id', 'teamDivOne', team);
+
 const back = document.createElement('h3');
-elementInner(back, 'BACK', team);
+elementInner(back, 'BACK', teamDivOne);
 
 const mainTeam = document.createElement('div');
-elementAttributeAppend(mainTeam, 'id', 'main-team', team);
+elementAttributeAppend(mainTeam, 'id', 'main-team', teamDivOne);
 
 const forward = document.createElement('h3');
-elementInner(forward, 'FORWARD', team);
+elementInner(forward, 'FORWARD', teamDivOne);
+
+const teamDivtwo = document.createElement('div');
+elementAttributeAppend(teamDivtwo, 'id', 'teamDivTwo', team);
 
 const followersHead = document.createElement('h3');
-elementInner(followersHead, 'Followers', team);
+elementInner(followersHead, 'Followers', teamDivtwo);
 
 const followers = document.createElement('div');
-elementAttributeAppend(followers, 'id', 'followers', team);
+elementAttributeAppend(followers, 'id', 'followers', teamDivtwo);
 
 const interchangeHead = document.createElement('h3');
-elementInner(interchangeHead, 'Interchange', team);
+elementInner(interchangeHead, 'Interchange', teamDivtwo);
 
 const interchange = document.createElement('div');
-elementAttributeAppend(interchange, 'id', 'interchange', team);
+elementAttributeAppend(interchange, 'id', 'interchange', teamDivtwo);
 
 const squad = document.createElement('div');
 elementAttributeAppend(squad, 'id', 'squad', container);

@@ -1,10 +1,14 @@
-import { Sortable } from '@shopify/draggable';
+import { Sortable, Plugins } from '@shopify/draggable';
 
 export function dragDrop() {
   const containers = document.querySelectorAll('.container');
 
   const sortable = new Sortable(containers, {
     draggable: '.player',
+    mirror: {
+      constrainDimensions: true,
+    },
+    plugins: [Plugins.ResizeMirror],
   });
 
   let capacityReached;
