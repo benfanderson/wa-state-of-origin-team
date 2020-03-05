@@ -17,7 +17,7 @@
 // }
 
 #container{
-    width: 85%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -32,25 +32,26 @@ h1, h3{
     text-align: center;
 }
 
-// h3{
-//     text-align: center;
-// }
+h3 {
+    padding: 1vh;
+}
 
 #team{
     width: 85%;
     
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    // justify-content: space-evenly;
 }
 
 #teamDivOne{
     width:50%;
     background: url('./assets/images/field.png');
     background-repeat: no-repeat;
-  background-size: 115% 85%;
-  background-position-x: center;
+    background-size: 115% 100%;
+    background-position-x: center;
+    background-position-y: center;
   
   
 }
@@ -66,7 +67,8 @@ h1, h3{
 }
 
 #teamDivTwo{
-    width: 30%;
+    width: 50%;
+    // margin: auto;
     // display: flex;
     // flex-direction: row;
     // flex-wrap: wrap;
@@ -76,16 +78,17 @@ h1, h3{
 #interchange, #followers {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 .pos {
     width: 3vw;
-    height: 5.5vw;
+    height: 4.5vw;
     /* padding: 0.5vw; */
-    box-shadow: 0 10px #646363;
-    margin: 2vh 4vw;
+    box-shadow: 0 5px #2c2b2b;
+    margin: 2vh 2.8vw;
     // border: 1px solid #aaaaaa;
 }
 

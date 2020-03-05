@@ -6,92 +6,92 @@ import { elementAttributeAppend, elementInner } from './createElementFuncs';
 const players = [
 
   {
-    name: 'Nic Naitanui',
+    surname: 'Naitanui',
     club: 'West Coast',
     games: 166,
   },
   {
-    name: 'Josh Kennedy',
+    surname: 'Kennedy',
     club: 'West Coast',
     games: 243,
   },
   {
-    name: 'Liam Ryan',
+    surname: 'Ryan',
     club: 'West Coast',
     games: 37,
   },
   {
-    name: 'Tim Kelly',
+    surname: 'Kelly',
     club: 'West Coast',
     games: 48,
   },
   {
-    name: 'Elliot Yeo',
+    surname: 'Yeo',
     club: 'West Coast',
     games: 155,
   },
   {
-    name: 'Jeremy McGovern',
+    surname: 'McGovern',
     club: 'West Coast',
     games: 126,
   },
   {
-    name: 'Nat Fyfe',
+    surname: 'Fyfe',
     club: 'Fremantle',
     games: 173,
   },
   {
-    name: 'Michael Walters',
+    surname: 'Walters',
     club: 'Fremantle',
     games: 151,
   },
   {
-    name: 'David Mundy',
+    surname: 'Mundy',
     club: 'Fremantle',
     games: 299,
   },
   {
-    name: 'Jesse Hogan',
+    surname: 'Hogan',
     club: 'Fremantle',
     games: 83,
   },
   {
-    name: 'Irving Mosquito',
+    surname: 'Mosquito',
     club: 'Essendon',
     games: 0,
   },
   {
-    name: 'Cale Hooker',
+    surname: 'Hooker',
     club: 'Essendon',
     games: 153,
   },
   {
-    name: 'Lance Franklin',
+    surname: 'Franklin',
     club: 'Sydney',
     games: 300,
   },
   {
-    name: 'Patrick Cripps',
+    surname: 'Cripps',
     club: 'Carlton',
     games: 101,
   },
   {
-    name: 'Stephen Coniglio',
+    surname: 'Coniglio',
     club: 'Greater Western Sydney',
     games: 131,
   },
   {
-    name: 'Bradley Hill',
+    surname: 'Hill',
     club: 'St Kilda',
     games: 149,
   },
   {
-    name: 'Mitch Duncan',
+    surname: 'Duncan',
     club: 'Geelong',
     games: 203,
   },
   {
-    name: 'Jaeger OMeara',
+    surname: 'OMeara',
     club: 'Hawthorn',
     games: 92,
   },
@@ -154,7 +154,7 @@ players.forEach((player) => {
   pic.src = playerHeadshot;
   playerDiv.appendChild(pic);
   const name = document.createElement('p');
-  name.innerHTML = player.name;
+  name.innerHTML = player.surname;
   playerDiv.appendChild(name);
 });
 
