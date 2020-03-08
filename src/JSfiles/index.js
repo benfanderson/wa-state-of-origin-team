@@ -133,7 +133,7 @@ const container = document.createElement('div');
 elementAttributeAppend(container, 'id', 'container', document.body);
 
 const headline = document.createElement('h1');
-elementInner(headline, 'Choose your WA State of Origin team', container);
+elementInner(headline, 'id', 'headline', 'Choose your WA State of Origin team', container);
 
 const team = document.createElement('div');
 elementAttributeAppend(team, 'id', 'team', container);
@@ -142,25 +142,25 @@ const teamDivOne = document.createElement('div');
 elementAttributeAppend(teamDivOne, 'id', 'teamDivOne', team);
 
 const back = document.createElement('h3');
-elementInner(back, 'BACK', teamDivOne);
+elementInner(back, 'id', 'back', 'BACK', teamDivOne);
 
 const mainTeam = document.createElement('div');
 elementAttributeAppend(mainTeam, 'id', 'main-team', teamDivOne);
 
 const forward = document.createElement('h3');
-elementInner(forward, 'FORWARD', teamDivOne);
+elementInner(forward, 'id', 'forward', 'FORWARD', teamDivOne);
 
 const teamDivtwo = document.createElement('div');
 elementAttributeAppend(teamDivtwo, 'id', 'teamDivTwo', team);
 
 const followersHead = document.createElement('h3');
-elementInner(followersHead, 'Followers', teamDivtwo);
+elementInner(followersHead, 'id', 'followersHead', 'Followers', teamDivtwo);
 
 const followers = document.createElement('div');
 elementAttributeAppend(followers, 'id', 'followers', teamDivtwo);
 
 const interchangeHead = document.createElement('h3');
-elementInner(interchangeHead, 'Interchange', teamDivtwo);
+elementInner(interchangeHead, 'id', 'interchangeHead', 'Interchange', teamDivtwo);
 
 const interchange = document.createElement('div');
 elementAttributeAppend(interchange, 'id', 'interchange', teamDivtwo);
@@ -169,7 +169,7 @@ const squad = document.createElement('div');
 elementAttributeAppend(squad, 'id', 'squad', container);
 
 const playersHead = document.createElement('h2');
-elementInner(playersHead, 'Players', squad);
+elementInner(playersHead, 'id', 'players', 'Players', squad);
 
 const playerContainer = document.createElement('div');
 elementAttributeAppend(playerContainer, 'id', 'playerContainer', squad);
