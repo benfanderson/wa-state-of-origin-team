@@ -14,7 +14,15 @@ export function dragDrop() {
   let capacityReached;
 
   sortable.on('drag:stop', (evt) => {
-  // eslint-disable-next-line max-len
+    if (evt.source.parentElement.classList.contains('pos')) {
+      const firstInitial = evt.originalSource.lastChild.innerHTML.charAt(0);
+      const lastName = evt.originalSource.lastChild.innerHTML.split(' ')[1];
+      evt.originalSource.lastChild.innerHTML = `${firstInitial}. ${lastName}`;
+    }
+    if (evt.source.parentElement.hasAttribute('id')) {
+      evt.originalSource.lastChild.innerHTML = evt.originalSource.fullName;
+    }
+    // eslint-disable-next-line max-len
     const posContainerChildren = sortable.getDraggableElementsForContainer(evt.source.parentElement).length;
     let capacityStatus = evt.source.parentElement.dataset.capacity;
     if (posContainerChildren > 0) {

@@ -6,94 +6,124 @@ import { elementAttributeAppend, elementInner } from './createElementFuncs';
 const players = [
 
   {
-    surname: 'Naitanui',
+    name: 'Nic Naitanui',
     club: 'West Coast',
-    games: 166,
   },
   {
-    surname: 'Kennedy',
+    name: 'Josh Kennedy',
     club: 'West Coast',
-    games: 243,
   },
   {
-    surname: 'Ryan',
+    name: 'Liam Ryan',
     club: 'West Coast',
-    games: 37,
   },
   {
-    surname: 'Kelly',
+    name: 'Tim Kelly',
     club: 'West Coast',
-    games: 48,
   },
   {
-    surname: 'Yeo',
+    name: 'Elliot Yeo',
     club: 'West Coast',
-    games: 155,
   },
   {
-    surname: 'McGovern',
+    name: 'Jeremy McGovern',
     club: 'West Coast',
-    games: 126,
   },
   {
-    surname: 'Fyfe',
+    name: 'Dom Sheed',
+    club: 'West Coast',
+  },
+  {
+    name: 'Brad Sheppard',
+    club: 'West Coast',
+  },
+  {
+    name: 'Nat Fyfe',
     club: 'Fremantle',
-    games: 173,
   },
   {
-    surname: 'Walters',
+    name: 'Michael Walters',
     club: 'Fremantle',
-    games: 151,
   },
   {
-    surname: 'Mundy',
+    name: 'David Mundy',
     club: 'Fremantle',
-    games: 299,
   },
   {
-    surname: 'Hogan',
+    name: 'Jesse Hogan',
     club: 'Fremantle',
-    games: 83,
   },
   {
-    surname: 'Mosquito',
+    name: 'Rory Lobb',
+    club: 'Fremantle',
+  },
+  {
+    name: 'Brandon Matera',
+    club: 'Fremantle',
+  },
+  {
+    name: 'Joel Hamling',
+    club: 'Fremantle',
+  },
+  {
+    name: 'Nathan Wilson',
+    club: 'Fremantle',
+  },
+  {
+    name: 'Irving Mosquito',
     club: 'Essendon',
-    games: 0,
   },
   {
-    surname: 'Hooker',
+    name: 'Cale Hooker',
     club: 'Essendon',
-    games: 153,
   },
   {
-    surname: 'Franklin',
+    name: 'Aaron Naughton',
+    club: 'Western Bulldogs',
+  },
+  {
+    name: 'Jason Johannisen',
+    club: 'Western Bulldogs',
+  },
+  {
+    name: 'Lance Franklin',
     club: 'Sydney',
-    games: 300,
   },
   {
-    surname: 'Cripps',
+    name: 'Patrick Cripps',
     club: 'Carlton',
-    games: 101,
   },
   {
-    surname: 'Coniglio',
+    name: 'Stephen Coniglio',
     club: 'Greater Western Sydney',
-    games: 131,
   },
   {
-    surname: 'Hill',
+    name: 'Sam Taylor',
+    club: 'Greater Western Sydney',
+  },
+  {
+    name: 'Brad Hill',
     club: 'St Kilda',
-    games: 149,
   },
   {
-    surname: 'Duncan',
+    name: 'Paddy Ryder',
+    club: 'St Kilda',
+  },
+  {
+    name: 'Mitch Duncan',
     club: 'Geelong',
-    games: 203,
   },
   {
-    surname: 'OMeara',
+    name: 'Jaeger O&#39Meara',
     club: 'Hawthorn',
-    games: 92,
+  },
+  {
+    name: 'Ben Stratton',
+    club: 'Hawthorn',
+  },
+  {
+    name: 'Daniel Rich',
+    club: 'Brisbane',
   },
 
 
@@ -154,8 +184,9 @@ players.forEach((player) => {
   pic.src = playerHeadshot;
   playerDiv.appendChild(pic);
   const name = document.createElement('p');
-  name.innerHTML = player.surname;
+  name.innerHTML = player.name;
   playerDiv.appendChild(name);
+  playerDiv.fullName = player.name;
 });
 
 createDropZones(15, mainTeam);
