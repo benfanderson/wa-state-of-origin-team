@@ -1,4 +1,4 @@
-import playerHeadshot from '../assets/images/headshot.png';
+import playerHeadshot from '../assets/images/headshot1.png';
 import '../style.scss';
 import { dragDrop, createDropZones } from './dragDropFuncs';
 import { elementAttributeAppend, elementInner } from './createElementFuncs';
@@ -141,26 +141,26 @@ elementAttributeAppend(team, 'id', 'team', container);
 const teamDivOne = document.createElement('div');
 elementAttributeAppend(teamDivOne, 'id', 'teamDivOne', team);
 
-const back = document.createElement('h3');
+const back = document.createElement('h4');
 elementInner(back, 'id', 'back', 'BACK', teamDivOne);
 
 const mainTeam = document.createElement('div');
 elementAttributeAppend(mainTeam, 'id', 'main-team', teamDivOne);
 
-const forward = document.createElement('h3');
+const forward = document.createElement('h4');
 elementInner(forward, 'id', 'forward', 'FORWARD', teamDivOne);
 
 const teamDivtwo = document.createElement('div');
 elementAttributeAppend(teamDivtwo, 'id', 'teamDivTwo', team);
 
 const followersHead = document.createElement('h3');
-elementInner(followersHead, 'id', 'followersHead', 'Followers', teamDivtwo);
+elementInner(followersHead, 'id', 'followersHead', 'FOLLOWERS', teamDivtwo);
 
 const followers = document.createElement('div');
 elementAttributeAppend(followers, 'id', 'followers', teamDivtwo);
 
 const interchangeHead = document.createElement('h3');
-elementInner(interchangeHead, 'id', 'interchangeHead', 'Interchange', teamDivtwo);
+elementInner(interchangeHead, 'id', 'interchangeHead', 'INTERCHANGE', teamDivtwo);
 
 const interchange = document.createElement('div');
 elementAttributeAppend(interchange, 'id', 'interchange', teamDivtwo);

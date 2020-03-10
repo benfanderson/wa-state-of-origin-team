@@ -18,9 +18,15 @@ export function dragDrop() {
       const firstInitial = evt.originalSource.lastChild.innerHTML.charAt(0);
       const lastName = evt.originalSource.lastChild.innerHTML.split(' ')[1];
       evt.originalSource.lastChild.innerHTML = `${firstInitial}. ${lastName}`;
+      evt.originalSource.lastChild.style.color = '#e1dd10';
+      evt.originalSource.lastChild.style.backgroundColor = 'black';
+      evt.originalSource.lastChild.style.padding = '1.5%';
     }
     if (evt.source.parentElement.hasAttribute('id')) {
       evt.originalSource.lastChild.innerHTML = evt.originalSource.fullName;
+      evt.originalSource.lastChild.style.color = 'black';
+      evt.originalSource.lastChild.style.backgroundColor = 'white';
+      evt.originalSource.lastChild.style.padding = '0';
     }
     // eslint-disable-next-line max-len
     const posContainerChildren = sortable.getDraggableElementsForContainer(evt.source.parentElement).length;

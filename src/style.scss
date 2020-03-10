@@ -25,12 +25,16 @@ h1 {
 }
 
 h2{
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    padding-left: 1vh;
+    border-left: solid  #e1dd10 5px;
 }
 
 h3 {
     width: 100%;
     padding: 1vh;
+    border-left: solid  #e1dd10 5px;
+    font-weight: bold;
 }
 
 #team{
@@ -42,9 +46,9 @@ h3 {
     width:100%;
     background: url('./assets/images/field.png');
     background-repeat: no-repeat;
-    background-size: 115% 100%;
-    background-position-x: center;
-    background-position-y: center;
+    background-size: 119% 95%;
+    background-position-x: 60%;
+    background-position-y: 45%;
 }
 
 #main-team{
@@ -52,11 +56,16 @@ h3 {
     display: grid;
     grid-row-gap: 2%;
     grid-template-columns: auto auto auto;
-    
+}
+
+#back{
+    margin-bottom: 5%;
+    text-align: center;
 }
 
 #forward{
     margin-top: 10%;
+    text-align: center;
 }
 
 #interchange, #followers {
@@ -67,11 +76,13 @@ h3 {
 }
 
 .pos {
-    width: 4.5vw;
+    width: 5.5vw;
     height: 6vw; 
-    box-shadow: 0 5px #2c2b2b;
     margin: 1% auto;
     font-size: 0.9em;
+    background-image: url('./assets/images/cross.png');
+   
+    
 }
 
 #squad{ 
@@ -81,9 +92,9 @@ h3 {
 
 #playerContainer{
     width: 5vw;
-    height: 90vh;
+    height: 95vh;
     padding: 0.5vw 1vw;
-    border: 1px solid #aaaaaa;
+    border: 3px solid #e1dd10;
     overflow: scroll;
 }
 
@@ -91,6 +102,7 @@ h3 {
     width: 100%;
      height: auto;
      margin-bottom: 20%;
+     text-align: center;
 }
 
 .headshot{
