@@ -1,4 +1,5 @@
 import { Sortable, Plugins } from '@shopify/draggable';
+import placeholder from '../assets/images/placeholder.png';
 
 export function dragDrop() {
   const containers = document.querySelectorAll('.container');
@@ -22,6 +23,7 @@ export function dragDrop() {
       evt.originalSource.lastChild.style.backgroundColor = 'black';
       evt.originalSource.lastChild.style.padding = '1.5%';
     }
+
     if (evt.source.parentElement.hasAttribute('id')) {
       evt.originalSource.lastChild.innerHTML = evt.originalSource.fullName;
       evt.originalSource.lastChild.style.color = 'black';
@@ -37,6 +39,16 @@ export function dragDrop() {
       capacityStatus = '';
     }
     capacityReached = capacityStatus;
+
+    if (evt.source.parentElement.children.length > 0 && evt.source.parentElement.classList.contains('pos')) {
+      evt.source.parentElement.style.backgroundImage = 'none';
+    }
+  });
+
+  sortable.on('drag:start', (evt) => {
+    if (evt.source.parentElement.classList.contains('pos')) {
+      evt.source.parentElement.style.backgroundImage = `url(${placeholder})`;
+    }
   });
 
 
