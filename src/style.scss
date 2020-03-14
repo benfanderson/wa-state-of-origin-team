@@ -18,10 +18,15 @@
     font-family: 'Open Sans';
 }
 
-h1 {
+#headline {
     margin-bottom: 3%;
     width: 100%;
     text-align: center;
+}
+
+#blurb {
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 h2{
@@ -93,7 +98,7 @@ h3 {
 
 #playerContainer{
     width: 5vw;
-    height: 95vh;
+    height: 105vh;
     padding: 0.5vw 1vw;
     border: 3px solid #e1dd10;
     overflow: scroll;

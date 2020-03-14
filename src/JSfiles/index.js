@@ -1,7 +1,11 @@
+import domtoimage from 'dom-to-image';
+// eslint-disable-next-line no-unused-vars
+import { saveAs } from 'file-saver';
 import playerHeadshot from '../assets/images/headshot.png';
 import '../style.scss';
 import { dragDrop, createDropZones } from './dragDropFuncs';
 import { elementAttributeAppend, elementInner } from './createElementFuncs';
+
 
 const players = [
 
@@ -134,6 +138,23 @@ elementAttributeAppend(container, 'id', 'container', document.body);
 
 const headline = document.createElement('h1');
 elementInner(headline, 'id', 'headline', 'Choose your WA State of Origin team', container);
+
+const blurb = document.createElement('p');
+elementInner(blurb, 'id', 'blurb', 'Drag and drop players to positions on the field and once your&#39e done <span id=click> click here </span> to download a snapshot of your team to share on social media.', container);
+
+const click = document.getElementById('click');
+click.style.color = '#e1dd10';
+click.style.textDecoration = 'underline';
+click.style.cursor = 'pointer';
+click.addEventListener('click', () => {
+  click.style.color = 'purple';
+  const node = document.getElementById('team');
+  node.style.backgroundColor = 'white';
+  domtoimage.toBlob(node)
+    .then((blob) => {
+      window.saveAs(blob, 'WA-State-of-Origin-team.png');
+    });
+});
 
 const team = document.createElement('div');
 elementAttributeAppend(team, 'id', 'team', container);

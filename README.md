@@ -14,11 +14,17 @@ This app uses the following open source packages:
 
   * [Draggable](https://shopify.github.io/draggable/)
 
+  * [File Saver](https://github.com/eligrey/FileSaver.js)
+
+  * [DOM to Image](https://github.com/tsayen/dom-to-image)
+
   * [Babel](https://babeljs.io/)
 
   * [Sass](https://sass-lang.com/)
 
   * [Eslint](https://eslint.org/)
+
+  * [Express](https://www.npmjs.com/package/express)
 
 ### How To Use
 
@@ -39,7 +45,7 @@ https://github.com/benfanderson/wa-state-of-origin-team.git
 
 **To run app in development mode**
 
-```npm run start```
+```npm run dev```
 
 **To run app in production mode**
 
