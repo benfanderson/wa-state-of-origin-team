@@ -143,9 +143,6 @@ const blurb = document.createElement('p');
 elementInner(blurb, 'id', 'blurb', 'Drag and drop players to positions on the field and once your&#39e done <span id=click> click here </span> to download a snapshot of your team to share on social media.', container);
 
 const click = document.getElementById('click');
-click.style.color = '#e1dd10';
-click.style.textDecoration = 'underline';
-click.style.cursor = 'pointer';
 click.addEventListener('click', () => {
   click.style.color = 'purple';
   const node = document.getElementById('team');
