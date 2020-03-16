@@ -1,5 +1,5 @@
 import { Sortable, Plugins } from '@shopify/draggable';
-import placeholder from '../assets/images/placeholder.png';
+import placeholder from '../assets/images/placeholder1.png';
 
 export function dragDrop() {
   const containers = document.querySelectorAll('.container');
