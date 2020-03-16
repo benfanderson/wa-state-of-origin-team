@@ -53,28 +53,30 @@ h3 {
     float: left;
 }
 
-#teamDivOne{
-    width:100%;
-}
-
-#main-team{
-    width: 100%;
-    display: grid;
-    grid-row-gap: 0.75%;
-    grid-template-columns: auto auto auto;
+#field{
     background: url('./assets/images/field.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
+#main-team{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 0.75%;
+    grid-template-columns: auto auto auto;
+}
+
 #back{
-    // margin-bottom: 3%;
     text-align: center;
 }
 
 #forward{
-    // margin-top: 5%;
     text-align: center;
+}
+
+#teamDivTwo{
+    margin: 0 2%;
 }
 
 #interchange, #followers {
