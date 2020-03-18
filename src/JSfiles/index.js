@@ -1,7 +1,7 @@
 import domtoimage from 'dom-to-image';
 // eslint-disable-next-line no-unused-vars
 import { saveAs } from 'file-saver';
-import playerHeadshot from '../assets/images/placeholder2.png';
+import playerHeadshot from '../assets/images/headshot.png';
 import '../style.scss';
 import { dragDrop, createDropZones } from './dragDropFuncs';
 import { elementAttributeAppend, elementInner } from './createElementFuncs';

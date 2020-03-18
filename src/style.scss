@@ -13,7 +13,7 @@
 }
 
 #container{
-    width: 40%;
+    width: 35%;
     margin: auto;
     font-family: 'Open Sans';
 }
@@ -91,7 +91,7 @@ h3 {
     height: 6vw; 
     margin: 1% auto;
     font-size: 0.8em;
-    background-image: url('./assets/images/placeholder1.png');
+    background-image: url('./assets/images/placeholder.png');
     background-repeat: no-repeat;
    
     
@@ -104,7 +104,7 @@ h3 {
 
 #playerContainer{
     width: 100%;
-    height: 105vh;
+    height: 85vh;
     padding: 0.5vw .5vw;
     border: 3px solid #e1dd10;
     overflow: scroll;
