@@ -7,6 +7,8 @@
       url('./assets/fonts/open-sans-v17-latin-regular.woff') format('woff');
   }
 
+  $color-yellow: #e1dd10;;
+
 *{
     padding: 0;
     margin: 0;
@@ -30,7 +32,7 @@
 }
 
 #click {
-    color: #e1dd10;
+    color: $color-yellow;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -38,13 +40,13 @@
 h2{
     margin-bottom: 15%;
     padding-left: 1vh;
-    border-left: solid  #e1dd10 5px;
+    border-left: solid  $color-yellow 5px;
 }
 
 h3 {
     width: 100%;
     padding: 1vh;
-    border-left: solid  #e1dd10 5px;
+    border-left: solid $color-yellow 5px;
     font-weight: bold;
 }
 
@@ -93,8 +95,6 @@ h3 {
     font-size: 0.8em;
     background-image: url('./assets/images/placeholder.png');
     background-repeat: no-repeat;
-   
-    
 }
 
 #squad{ 
@@ -121,3 +121,16 @@ h3 {
     height: auto;
 }
 
+//Styling fof tablet portrait view
+
+@media (max-width: 800px) {
+
+    #container{
+        width: 95%;
+    }
+
+    .pos {
+        width: 13vw;
+        height: 14vw; 
+    }
+}
