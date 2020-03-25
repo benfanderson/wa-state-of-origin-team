@@ -21,12 +21,14 @@
 }
 
 #headline {
+    font-size: 1.5em;
     margin-bottom: 3%;
     width: 100%;
     text-align: center;
 }
 
 #blurb {
+    font-size: 0.75em;
     text-align: center;
     margin-bottom: 2%;
 }
@@ -38,12 +40,14 @@
 }
 
 h2{
+    font-size: 0.8em;
     margin-bottom: 15%;
     padding-left: 1vh;
     border-left: solid  $color-yellow 5px;
 }
 
 h3 {
+    font-size: 1em;
     width: 100%;
     padding: 1vh;
     border-left: solid $color-yellow 5px;
@@ -70,10 +74,12 @@ h3 {
 }
 
 #back{
+    font-size: 0.7em;
     text-align: center;
 }
 
 #forward{
+    font-size: 0.7em;
     text-align: center;
 }
 
@@ -89,12 +95,13 @@ h3 {
 }
 
 .pos {
-    width: 13vw;
-    height: 14vw; 
+    width: 20vw;
+    height: 24vw; 
     margin: 1% auto;
     font-size: 0.8em;
     background-image: url('./assets/images/placeholder.png');
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #squad{ 
@@ -111,14 +118,54 @@ h3 {
 }
 
 .player {
+    font-size: 0.75em;
     width: 100%;
-     height: auto;
-     text-align: center;
+    height: auto;
+    text-align: center;
 }
 
 .headshot{
     width: 100%;
     height: auto;
+}
+
+/*View for tablet*/
+
+@media (min-width: 479px) {
+
+    #headline{
+        font-size: 2em;
+    }
+
+    #blurb{
+        font-size: 1em;
+    }
+
+    #back {
+        font-size: 1em;
+    }
+
+    #forward {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.2em;
+    }
+
+    .pos {
+        width: 13vw;
+        height: 14vw;
+    } 
+
+    .player{
+        font-size: 1em;
+    }
+
 }
 
 //Styling for desktop view
