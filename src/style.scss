@@ -7,7 +7,7 @@
       url('./assets/fonts/open-sans-v17-latin-regular.woff') format('woff');
   }
 
-  $color-yellow: #e1dd10;;
+  $color-yellow: #e1dd10;
 
 *{
     padding: 0;
@@ -15,7 +15,7 @@
 }
 
 #container{
-    width: 35%;
+    width: 95%;
     margin: auto;
     font-family: 'Open Sans';
 }
@@ -89,8 +89,8 @@ h3 {
 }
 
 .pos {
-    width: 5.2vw;
-    height: 6vw; 
+    width: 13vw;
+    height: 14vw; 
     margin: 1% auto;
     font-size: 0.8em;
     background-image: url('./assets/images/placeholder.png');
@@ -121,16 +121,16 @@ h3 {
     height: auto;
 }
 
-//Styling fof tablet portrait view
+//Styling for desktop view
 
-@media (max-width: 800px) {
+@media (min-width: 1000px) {
 
     #container{
-        width: 95%;
+        width: 35%;
     }
 
     .pos {
-        width: 13vw;
-        height: 14vw; 
+        width: 5.2vw;
+        height: 6vw; 
     }
 }
